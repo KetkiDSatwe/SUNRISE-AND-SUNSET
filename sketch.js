@@ -45,7 +45,7 @@ async function getBackgroundImg(){
     var time=await fetch("https://worldtimeapi.org/api/timezone/asia/kolkata")
     var timeJson=await time.json()
     var datetime=timeJson.datetime
-    var hour=datetime.slice(11,13)
+    hour=datetime.slice(11,13)
     console.log(hour)
 
     if(hour>=0 && hour<18 ){
